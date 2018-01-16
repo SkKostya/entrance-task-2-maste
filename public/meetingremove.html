@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Create new meeting</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	
+	<div class="wrapper">
+		
+		<div class="new">
+			<div class="new__header">
+				<p class="new__title"><strong><span style="color:red;">Я</span>ндекс</strong> Переговорки</p>
+			</div>
+		</div>
+
+		<div class="main1">
+			
+			<div class="main1__left">
+				<p class="main1__newmet">Новая встреча</p>
+
+				<div style="margin-top:20px;"">
+					<label for="main1__topic" style="font-size: 1vw; font-family: helvetica-neue-bold;">Тема</label><br/>
+					<input class="main1__topic" id="main__topic" type="text" placeholder="О чём будете говорить?">
+				</div>
+				<div style="margin-top:20px;"">
+					<label for="main1__people" style="font-size: 1vw; font-family: helvetica-neue-bold;">Участники</label><br/>
+					<input class="main1__topic" id="main__people" type="text" placeholder="Например, Тор Одинович">
+				</div>
+
+				<p class="main1__person">
+				<img src="logo/2018-01-04_17-04-31.png" alt="" class="main1__img">&nbsp; <span>Лекс Лютер</span> &nbsp; <button class="main1__block main1__block_delete">&#10006;</button></p>
+				<p class="main1__person">
+				<img src="logo/2018-01-04_17-02-52.png" alt="" class="main1__img">&nbsp; <span>Томас Андерсон</span> &nbsp; <button class="main1__block main1__block_delete">&#10006;</button></p>
+				<p class="main1__person">
+				<img src="logo/2018-01-04_17-05-01.png" alt="" class="main1__img">&nbsp; <span>Дарт Вейдер</span> &nbsp; <button class="main1__block main1__block_delete">&#10006;</button></p>
+			</div>
+
+			<div class="main1__right">
+				<button class="main1__block">&#10006;</button>
+				
+				<p class="main1__datetxt">
+					<span class="main1__dtext">Дата</span>
+					<span class="main1__dtext">Начало</span>
+					<span class="main1__dtext">Конец</span>
+				</p>
+				<input class="main1__date" type="date" width="250px">
+				<input class="main1__date" type="time" style="margin-left: 16px;"> – <input class="main1__date" type="time"><br/>
+				
+				<div class="main1__recommendations">
+					<span class="main1__dtext">Рекомендованные перговорки</span>
+					<p class="main1__meet"><span class="main1__time">16:00 – 16:30</span> &nbsp;&nbsp; <span class="main1__text">Готем &middot; 4 этаж</span></p>
+					<p class="main1__meet"><span class="main1__time">16:00 – 16:30</span> &nbsp;&nbsp; <span class="main1__text">Готем &middot; 4 этаж</span></p>
+					<p class="main1__meet"><span class="main1__time">16:00 – 16:30</span> &nbsp;&nbsp; <span class="main1__text">Готем &middot; 4 этаж</span></p>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="footer1">
+				<button class="footer1__cancle">Отмена</button>
+				<button class="footer1__creature">Создать встречу</button>
+		</div>
+
+		<div class="blockDel">
+			<div class="blockDel__windowDel">
+				<img src="logo/2018-01-07_20-05-33.png" alt="" style="width: 40px; margin-top: 30px">
+				<p class="blockDel__text">
+					Встреча будет<br/>удалена безвозвратно
+				</p>
+				<button class="blockDel__btn">Отмена</button>
+				<button class="blockDel__btn">Удалить</button>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>

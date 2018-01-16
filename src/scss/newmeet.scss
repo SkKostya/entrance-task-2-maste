@@ -1,0 +1,268 @@
+.wrapper{
+	width: 1280px;
+	margin: 0 auto;
+}
+
+.new{
+	&__header{
+		box-shadow: 0 1px 0 0 #E9ECEF;
+		filter: progid:DXImageTransform.Microsoft.DropShadow(OffX=0, OffY=1, Color=#E9ECEF);
+		padding: 25px 0 22px 10px;
+	}
+	&__title{
+		width: 16vw;
+		font-size: 1.7vw;
+		transform: scaleX(0.7);
+	}
+}
+
+.main1{
+	margin: 32px 200px 0 200px;
+	box-shadow: 1px 0 0 0 #E9ECEF;
+	filter: progid:DXImageTransform.Microsoft.DropShadow(OffX=1, OffY=0, Color=#E9ECEF);
+
+	&__left{
+		width: 32vw;
+		float: left;
+	}	
+	&__newmet{
+		font-family: helvetica-neue-bold;
+		font-size: 20px;
+	}
+	&__topic{
+		border: 2px solid #E9ECEF;
+		border-radius: 4px;
+		width: 400px;
+		padding: 10px 5px;
+		margin-top: 2px;
+//From condition
+		&:focus{
+			& + .main1__list{
+				display: block;
+			}
+		}
+	}
+//From condition
+	&__list{
+		display: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -122px;
+		height: 120px;
+		width: 412px;
+		overflow: hidden;
+		overflow-y: scroll;
+		background: #E9ECEF;
+		color: #000000;
+		border: 1px solid grey;
+		background: #FFFFFF;
+		box-shadow: 0 1px 10px 0 rgba(0,44,92,0.28);
+		border-radius: 4px;
+	}
+	&__item{
+		line-height: 24px;
+		font-size: 13px;
+		font-family: HelveticaNeue;
+		height: 24px;
+		margin-top: 5px;
+		&:hover{
+			background-color: #E9ECEF;
+		}
+		&:first-child{
+			margin-top: 0;
+		}
+	}
+	&__perIMG{
+		width: 24px;
+	}
+	&__perName{
+		position: relative;
+		top: -8.5px;
+		left: 5px;
+	}
+//End
+	&__person{
+		padding: 0 6px 6px 3px;
+		height: 18px;
+		background: #E9ECEF;
+		border-radius: 16px;
+		margin: 5px 0 0 5px;
+		float: left;
+
+		font-family: HelveticaNeue;
+		font-size: 13px;
+		letter-spacing: 0;
+		line-height: 17px;
+		vertical-align: middle;
+	}
+	&__img{
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		float: left;
+		margin: 0 0 0 -3px;
+	}
+
+	
+	&__right{
+		width: 32vw;
+		float: right;
+	}
+
+	&__block{
+		width: 24px;
+		height: 24px;
+		background-color: #E9ECEF;
+		border-radius: 100%;
+		font-size: 13px;
+		font-weight: bold;
+		color: grey;
+		text-align: center;
+		line-height: 24px;
+		margin-left: 395px;
+		border: none;
+		box-shadow: none;
+		padding: 1px 2px 2px 1px;
+		-moz-box-sizing: content-box;
+		&:focus{
+			outline: 0;
+		}
+		&_delete{
+			margin-left: 0;
+			background: none;
+			border-radius: 0;
+		}
+		//From editing meeting
+		&_remove{
+			background-color: #007DFF;
+			margin-left: 180px;
+			color: #ffffff;
+		}
+	}
+	
+
+	&__date{
+		margin-top: 2px;
+		padding: 5px;
+		border: 2px solid #E9ECEF;
+	}
+	&__datetxt{
+		margin-top: 17px;
+	}
+	&__dtext{
+		font-size: 13px;
+		font-family: helvetica-neue-bold;
+		&:nth-child(2){
+			margin-left: 137px;
+		}
+		&:nth-child(3){
+			margin-left: 45px;
+		}
+	}
+
+	&__recommendations{
+		margin-top: 20px;
+	}
+	&__meet{
+		padding: 10px;
+		background-color: #E9ECEF;
+		border-radius: 4px;
+		width: 400px;
+		margin-top: 10px;
+		//From editing meeting
+		&_blue{
+			background-color: #007DFF;
+			color: #ffffff;
+			padding: 8px 10px;
+			margin-top: 7px;
+		}
+	}
+	&__time{
+		font-family: helvetica-neue-bold;
+		font-size: 13px;
+		letter-spacing: 0;
+		line-height: 17px;
+	}
+	&__text{
+		font-family: HelveticaNeue;
+		font-size: 13px;
+		letter-spacing: 0;
+		line-height: 17px;
+	}
+}
+
+.footer1{
+	box-shadow: 0 -1px 0 0 #E9ECEF;
+	filter: progid:DXImageTransform.Microsoft.DropShadow(OffX=1, OffY=0, Color=#E9ECEF);
+	width: 100%;
+	padding: 10px;
+	margin-top: 500px;
+	&__cancle{
+		margin-left: 40%;
+		padding: 10px;
+		background: #E9ECEF;
+		border-radius: 4px;
+		border: none;
+		&:focus{
+			outline: 0;
+		}
+		&_center{
+			margin-left: 15px;
+			&:first-child{
+				margin-left: 35%;
+			}
+		}
+	}
+	&__creature{
+		padding: 10px;
+		background: #007DFF;
+		border-radius: 4px;
+		margin-left: 15px;
+		border: none;
+		&:focus{
+			outline: 0;
+		}
+	}
+}
+
+.blockDel{
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0,16,33,0.40);
+	text-align: center;
+	&__windowDel{
+		box-shadow: 0 1px 16px 0 rgba(0,44,92,0.28);
+		border-radius: 8px;
+		margin: 200px auto;
+		width: 444px;
+		height: 228px;
+		background-color: #ffffff;
+	}
+	&__text{
+		font-family: helvetica-neue-bold;
+		font-size: 20px;
+		letter-spacing: 0;
+		line-height: 24px;
+		margin-top: 10px;
+	}
+	&__btn{
+		background: #E9ECEF;
+		border-radius: 4px;
+		border: none;
+		padding: 10px;
+		margin-top: 40px;
+		margin-left: 7px;
+		font-size: 13px;
+		font-family: helveticaneuecyr-medium;
+		&:focus{
+			outline: 0;
+		}
+		&:first-child{
+			margin-left: -14px;
+		}
+	}
+}
